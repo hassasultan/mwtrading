@@ -2,20 +2,22 @@
 <html lang="en">
 <style>
     .sidebar_dashboard .active.active-item .active-item::after {
-            content: "";
-            right: 0;
-            top: 30px;
-            width: 6px;
-            height: 6px;
-            background-color: #fff;
-            border-radius: 100%;
-            position: absolute;
-            box-shadow: 0 0 0 4px #000;
-        }
-        .sidebar_dashboard .accordion-item {
-            border: 0;
-        }
+        content: "";
+        right: 0;
+        top: 30px;
+        width: 6px;
+        height: 6px;
+        background-color: #fff;
+        border-radius: 100%;
+        position: absolute;
+        box-shadow: 0 0 0 4px #000;
+    }
+
+    .sidebar_dashboard .accordion-item {
+        border: 0;
+    }
 </style>
+
 <head>
 
     <meta charset="utf-8">
@@ -25,7 +27,7 @@
     <meta name="author" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="user-id" content="{{Auth::check() ? Auth::user()->id: ''}}">
+    <meta name="user-id" content="{{ Auth::check() ? Auth::user()->id : '' }}">
 
     <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" inte
@@ -35,10 +37,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
 
 
 
@@ -56,8 +59,11 @@
             <div class="sidebar_container">
                 <div class="sidebar_dashboard h-100">
                     <i class="fa-solid fa-xmark side_bar_close d-lg-none"></i>
+                    @php
+                        $site = App\Models\SiteSetting::first();
+                    @endphp
                     <div class="text-center ">
-                        <a href="{{ route('home') }}"> <img src="{{ asset('assets/images/Fainal_.png') }}"
+                        <a href="{{ route('home') }}"> <img src="{{ asset('public/storage/' . $site->logo) }}"
                                 alt="" class="img-fluid" style="width:100px; height: 120px;"></a>
                     </div>
                     <nav class="h-100">
@@ -96,20 +102,21 @@
     </div>
 </body>
 
-<script src="{{asset('js/app.js')}}"></script>
-<script src="{{asset('public/js/app.js')}}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('public/js/app.js') }}"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
 <script src="{{ asset('user_dashboard/js/sweetalert.js') }}"></script>
 
 <script src="{{ asset('user_dashboard/js/summernote.min.js') }}"></script>
 <script src="{{ asset('user_dashboard/js/custom.js') }}"></script>
 <script src="{{ asset('user_dashboard/js/jquery.dataTables.min.js') }}"></script>
-{{--<script src="{{ asset('user_dashboard/js/dataTables.bootstrap4.min.js') }}"></script>
-<script src="{{ asset('user_dashboard/js/dataTables.responsive.min.js') }}"></script>--}}
+{{-- <script src="{{ asset('user_dashboard/js/dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('user_dashboard/js/dataTables.responsive.min.js') }}"></script> --}}
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="{{ asset('user_dashboard/js/responsive.bootstrap4.min.js') }}"></script>
@@ -121,29 +128,27 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
 @yield('bottom_script')
 
 <script>
-$(document).ready(function() {
+    $(document).ready(function() {
         // Select2 Multiple
         $(".select2-multiple").select2({
             placeholder: "Select",
             allowClear: true,
         });
     });
-$(".numberfield").keydown(function (e) {
+    $(".numberfield").keydown(function(e) {
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
             (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
             (e.keyCode >= 35 && e.keyCode <= 40)) {
-                 return;
+            return;
         }
         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
             e.preventDefault();
         }
     });
-    $(".notification-button").click(function(){
+    $(".notification-button").click(function() {
         $(".notification-menu").toggleClass("newshow");
         $(this).toggleClass("newshow");
     });
-
-
 </script>
 
 
