@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-grey);
+    font-weight: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+a:active,
+a:focus,
+a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+button:active,
+button:focus {
+    outline: 0 !important;
+    text-decoration: none;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none !important;
+    border-color: none !important;
+}
+
+:focus {
+    outline: 0 !important;
+}
+
+p {
+    color: var(--color-black);
+}
+
+.bg-style {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.height-100vh {
+    height: 100vh;
+}
+
+.height-80vh {
+    height: 80vh;
+}
+
+.px-100 {
+    padding: 0 100px;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+a:hover,
+a {
+    text-decoration: none;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.text-black {
+    color: #000;
+}
+
+.color-golden {
+    color: var(--color-golden);
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: currentColor;
+    box-shadow: none;
+}
