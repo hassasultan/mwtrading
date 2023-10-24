@@ -405,7 +405,7 @@
 
     </div>
 @endforeach --}}
-<div class="container-fluid p-5" style="background-color: var(--font-color-primary); ">
+<div class="container-fluid p-5 mb-5" style="background-color: var(--font-color-primary); ">
     <div class="container text-center">
         <h2 class="text-white fw-bold">How We Do It?</h2>
         <div class="row p-5">
@@ -433,7 +433,7 @@
         </div>
     </div>
 </div>
-    <div id="shopify-section-template--15924304773376__1648468991dc771b4f" class="shopify-section mt-4">
+    <div id="shopify-section-template--15924304773376__1648468991dc771b4f" class="shopify-section mt-5">
         <!-- product-area start -->
         <section class="product-area product-tab-ptb">
             <div class="container">
