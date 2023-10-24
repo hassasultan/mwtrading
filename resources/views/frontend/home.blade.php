@@ -284,7 +284,8 @@
             </ul>
         </section>
     </div> --}}
-    @foreach ($section as $item)
+
+    {{-- @foreach ($section as $item)
     <div id="shopify-section-template--15924304773376__1650876933ae7882f4{{ $item->id }}"
         class="shopify-section">
         <section class="new-category collection-category-template--15924304773376__1650876933ae7882f4">
@@ -328,13 +329,6 @@
                                                             <span class="sale">SALE</span>
 
                                                         </div>
-                                                        {{-- <div class="product-add-cart">
-                                                            {!! Share::page(route('product.details', $row->slug))->facebook()->twitter()->whatsapp()->linkedin() !!}
-                                                        </div>
-                                                        <div class="product-action">
-                                                            {!! Share::page(route('product.details', $row->slug))->facebook()->twitter()->whatsapp()->linkedin() !!}
-
-                                                        </div> --}}
                                                     </div>
                                                     <div class="product-content">
                                                         <div class="product-info">
@@ -342,71 +336,9 @@
                                                                 <a href="{{ route('product.details', $row->slug) }}"
                                                                     title="Drone camera">{{ \Illuminate\Support\Str::limit($row->title, 35, $end = '...') }}</a>
                                                             </div>
-                                                            {{-- <div class="price-box">
 
-                                                                <span class="new-price new-price-compare"
-                                                                    id="ProductPrice2">${{ $row->new_price }}</span><span
-                                                                    class="old-price"
-                                                                    id="ComparePrice2">${{ $row->old_price }}</span>
-                                                            </div> --}}
 
                                                         </div>
-                                                        {{-- <div class="product-info mt-3">
-                                                            <div class="row">
-                                                                <div class="col-3 text-center p-1">
-                                                                    @if (auth()->check())
-                                                                        @if ($row->wishlist == null)
-                                                                            <a href="javascript:void(0)"
-                                                                                class="text-start ms-2"
-                                                                                onclick="liked({{ $row->id }})"
-                                                                                alt="like"
-                                                                                style="padding: 8px;"><i
-                                                                                    class="far fa-thumbs-up  fs-5"
-                                                                                    id="thumb-icon-{{ $row->id }}"></i></a>
-                                                                        @else
-                                                                            <a href="javascript:void(0)"
-                                                                                class="text-start ms-2"
-                                                                                onclick="liked({{ $row->id }})"
-                                                                                alt="Unlike"
-                                                                                style="padding: 8px;"><i
-                                                                                    class="fas fa-thumbs-up  fs-5"
-                                                                                    id="thumb-icon-{{ $row->id }}"
-                                                                                    style="color: #127139;"></i></a>
-                                                                        @endif
-                                                                    @else
-                                                                        <a href="{{ route('login') }}"
-                                                                            class="text-start ms-2"
-                                                                            style="padding: 8px;"><i
-                                                                                class="far fa-thumbs-up  fs-5"></i></a>
-                                                                    @endif
-                                                                </div>
-                                                                <div class="col-6 text-center p-1">
-                                                                    @if(isset($row->coupon[0]))
-                                                                    @php
-                                                                        $fdate = $row->coupon[0]->expiry;
-                                                                        $tdate = \Carbon\Carbon::now();
-                                                                        $datetime1 = new DateTime($fdate);
-                                                                        $datetime2 = new DateTime($tdate);
-                                                                        $interval = $datetime1->diff($datetime2);
-                                                                        $days = $interval->format('%a');//now do whatever you like with $days
-                                                                    @endphp
-                                                                    <b>{{ $days }} days left</b>
-                                                                    @else
-                                                                    <b>Expired</b>
-
-                                                                    @endif
-                                                                </div>
-                                                                <div class="col-md-3 flat-social text-center p-1">
-                                                                    <i class="fas fa-share share_custom me-2"></i>
-
-                                                                    {!! Share::page(route('product.details', $row->slug))->facebook()->twitter()->whatsapp()->linkedin() !!}
-
-                                                                </div>
-                                                                <div class="col-12 full-fill text-center" style="color: #127139">
-                                                                    <b>Full fill by Amazon</b>
-                                                                </div>
-                                                            </div>
-                                                        </div> --}}
                                                     </div>
                                                 </div>
 
@@ -472,7 +404,35 @@
 
 
     </div>
-@endforeach
+@endforeach --}}
+<div class="container-fluid p-5" style="background-color: var(--font-color-primary); ">
+    <div class="container text-center">
+        <h2 class="text-white fw-bold">How We Do It?</h2>
+        <div class="row p-5">
+            <div class="col-md-4 p-2">
+                <div class="card  text-center p-5" style="border-radius: 10px;">
+                    <i class="fa-solid fa-certificate mt-3 mb-3" style="color: #127139;"></i>
+                    <h4 class="mt-3 mb-3" style="color: #127139; font-weight:bold">QUALITY</h4>
+                    <p class="mt-3 mb-3">We are providing you best quality of products</p>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="card  text-center p-5" style="border-radius: 10px;">
+                    <i class="fa-solid fa-certificate mt-3 mb-3" style="color: #127139;"></i>
+                    <h4 class="mt-3 mb-3" style="color: #127139; font-weight:bold">QUALITY</h4>
+                    <p class="mt-3 mb-3">We are providing you best quality of products</p>
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="card  text-center p-5" style="border-radius: 10px;">
+                    <i class="fa-solid fa-certificate mt-3 mb-3" style="color: #127139;"></i>
+                    <h4 class="mt-3 mb-3" style="color: #127139; font-weight:bold">QUALITY</h4>
+                    <p class="mt-3 mb-3">We are providing you best quality of products</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div id="shopify-section-template--15924304773376__1648468991dc771b4f" class="shopify-section">
         <!-- product-area start -->
         <section class="product-area product-tab-ptb">
