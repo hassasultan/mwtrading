@@ -11,7 +11,7 @@
 
                             <a href="{{ route('index') }}" class="footer-logo">
                                 <img style="max-width: 145px;"
-                                    src="{{ asset('storage/'.$site->logo) }}"
+                                    src="{{ asset('public/storage/'.$site->logo) }}"
                                     class="img-fluid" alt="electon6-store">
                             </a>
                             <style>

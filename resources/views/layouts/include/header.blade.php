@@ -7,10 +7,10 @@
                         $site =  App\Models\SiteSetting::first();
                     @endphp
                     <div class="header-element logo"><a href="{{ route('index') }}" class="theme-logo">
-                            <img style="max-width: 80px;" src="{{ asset('storage/'.$site->logo) }}" class="img-fluid"
+                            <img style="max-width: 80px;" src="{{ asset('public/storage/'.$site->logo) }}" class="img-fluid"
                                 alt="electon6-store">
                         </a><a href="{{ route('index') }}" class="other-logo">
-                            <img style="max-width: 30px;" src="{{ asset('storage/'.$site->logo) }}"
+                            <img style="max-width: 30px;" src="{{ asset('public/storage/'.$site->logo) }}"
                                 alt="electon6-store">
                         </a>
                         <style>
