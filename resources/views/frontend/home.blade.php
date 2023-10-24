@@ -632,21 +632,28 @@
         </div>
     </div>
 </div>
-<div class="container-fluid p-5">
+<div class="container p-5">
     <div class="logo p-5">
-        <div class="row">
+        <h3>OUR CLIENTS</h3>
+        <div class="row mt-5">
             <div class="col-sm-3 p-2">
                 <img src="{{ asset('assets/images/icon-1.png') }}"/>
+                <h6>Company</h6>
             </div>
             <div class="col-sm-3 p-2">
                 <img src="{{ asset('assets/images/icon-2.png') }}"/>
+                <h6>Company</h6>
 
             </div>
             <div class="col-sm-3 p-2">
                 <img src="{{ asset('assets/images/icon-3.png') }}"/>
+                <h6>Company</h6>
+
             </div>
             <div class="col-sm-3 p-2">
                 <img src="{{ asset('assets/images/icon-1.png') }}"/>
+                <h6>Company</h6>
+
             </div>
         </div>
     </div>
