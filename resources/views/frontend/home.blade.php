@@ -411,21 +411,21 @@
         <div class="row p-5">
             <div class="col-md-4 p-2">
                 <div class="card  text-center p-5" style="border-radius: 10px;">
-                    <i class="fal fa-certificate mt-3 mb-3" style="color: #127139;"></i>
+                    <i class="far fa-certificate mt-3 mb-3" style="color: #127139;"></i>
                     <h4 class="mt-3 mb-3" style="color: #127139; font-weight:bold">QUALITY</h4>
                     <p class="mt-3 mb-3">We are providing you best quality of products</p>
                 </div>
             </div>
             <div class="col-md-4 p-2">
                 <div class="card  text-center p-5" style="border-radius: 10px;">
-                    <i class="fal fa-certificate mt-3 mb-3" style="color: #127139;"></i>
+                    <i class="far fa-certificate mt-3 mb-3" style="color: #127139;"></i>
                     <h4 class="mt-3 mb-3" style="color: #127139; font-weight:bold">QUALITY</h4>
                     <p class="mt-3 mb-3">We are providing you best quality of products</p>
                 </div>
             </div>
             <div class="col-md-4 p-2">
                 <div class="card  text-center p-5" style="border-radius: 10px;">
-                    <i class="fal fa-certificate mt-3 mb-3" style="color: #127139;"></i>
+                    <i class="far fa-certificate mt-3 mb-3" style="color: #127139;"></i>
                     <h4 class="mt-3 mb-3" style="color: #127139; font-weight:bold">QUALITY</h4>
                     <p class="mt-3 mb-3">We are providing you best quality of products</p>
                 </div>
