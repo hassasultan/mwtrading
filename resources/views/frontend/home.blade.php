@@ -371,7 +371,7 @@
                                                                                 style="padding: 8px;"><i
                                                                                     class="fas fa-thumbs-up  fs-5"
                                                                                     id="thumb-icon-{{ $row->id }}"
-                                                                                    style="color: #ed1c24;"></i></a>
+                                                                                    style="color: #127139;"></i></a>
                                                                         @endif
                                                                     @else
                                                                         <a href="{{ route('login') }}"
@@ -402,7 +402,7 @@
                                                                     {!! Share::page(route('product.details', $row->slug))->facebook()->twitter()->whatsapp()->linkedin() !!}
 
                                                                 </div>
-                                                                <div class="col-12 full-fill text-center" style="color: #ed1c24">
+                                                                <div class="col-12 full-fill text-center" style="color: #127139">
                                                                     <b>Full fill by Amazon</b>
                                                                 </div>
                                                             </div>
@@ -555,7 +555,7 @@
                                                                                 style="padding: 8px;"><i
                                                                                     class="fas fa-thumbs-up  fs-5"
                                                                                     id="thumb-icon-{{ $row->id }}"
-                                                                                    style="color: #ed1c24;"></i></a>
+                                                                                    style="color: #127139;"></i></a>
                                                                         @endif
                                                                     @else
                                                                         <a href="{{ route('login') }}"
@@ -581,7 +581,7 @@
                                                                     {!! Share::page(route('product.details', $row->slug))->facebook()->twitter()->whatsapp()->linkedin() !!}
 
                                                                 </div>
-                                                                <div class="col-12 full-fill text-center" style="color: #ed1c24">
+                                                                <div class="col-12 full-fill text-center" style="color: #127139">
                                                                     <b>Full fill by Amazon</b>
                                                                 </div>
                                                             </div>
@@ -730,7 +730,7 @@
                                                                                 style="padding: 8px;"><i
                                                                                     class="fas fa-thumbs-up  fs-5"
                                                                                     id="thumb-icon-{{ $row->id }}"
-                                                                                    style="color: #ed1c24;"></i></a>
+                                                                                    style="color: #127139;"></i></a>
                                                                         @endif
                                                                     @else
                                                                         <a href="{{ route('login') }}"
@@ -756,7 +756,7 @@
                                                                     {!! Share::page(route('product.details', $row->slug))->facebook()->twitter()->whatsapp()->linkedin() !!}
 
                                                                 </div>
-                                                                <div class="col-12 full-fill text-center" style="color: #ed1c24">
+                                                                <div class="col-12 full-fill text-center" style="color: #127139">
                                                                     <b>Full fill by Amazon</b>
                                                                 </div>
                                                             </div>

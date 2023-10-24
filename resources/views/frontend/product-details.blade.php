@@ -893,7 +893,7 @@
                                                                             style="padding: 8px;"><i
                                                                                 class="fas fa-thumbs-up  fs-5"
                                                                                 id="thumb-icon-{{ $row->id }}"
-                                                                                style="color: #ed1c24;"></i></a>
+                                                                                style="color: #127139;"></i></a>
                                                                     @endif
                                                                 @else
                                                                     <a href="{{ route('login') }}"
@@ -925,7 +925,7 @@
                                                                 {!! Share::page(route('product.details', $row->slug))->facebook()->twitter()->whatsapp()->linkedin() !!}
 
                                                             </div>
-                                                            <div class="col-12 full-fill text-center" style="color: #ed1c24">
+                                                            <div class="col-12 full-fill text-center" style="color: #127139">
                                                                 <b>Full fill by Amazon</b>
                                                             </div>
                                                         </div>
@@ -995,8 +995,8 @@
                             </div>
                             <div class="modal-body">
                                 <div class="col-12 text-center">
-                                    <i class="fas fa-check-circle" style="font-size:5.9rem; color:#ed1c24;"></i>
-                                    <h4 class="mt-2" style="color:#ed1c24;">You've saved
+                                    <i class="fas fa-check-circle" style="font-size:5.9rem; color:#127139;"></i>
+                                    <h4 class="mt-2" style="color:#127139;">You've saved
                                         ${{ $product->old_price - $product->new_price }}</h4>
                                     <p>Coupon may expire at anytime. Use it now!</p>
                                     {{-- <b>{{ $product->coupon[0]->code }}</b> --}}

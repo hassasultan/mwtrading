@@ -293,7 +293,7 @@
                     if (res['message'] == "like") {
                         $("#thumb-icon-" + id).removeClass("far");
                         $("#thumb-icon-" + id).addClass("fas");
-                        $("#thumb-icon-" + id).css("color", "#ed1c24");
+                        $("#thumb-icon-" + id).css("color", "#127139");
                         $("#like-count").html("(" + res['count'] + ")");
                     }
                     if (res['message'] == "unlike") {

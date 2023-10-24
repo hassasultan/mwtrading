@@ -88,7 +88,7 @@
                                                                             alt="Unlike" style="padding: 8px;"><i
                                                                                 class="fas fa-thumbs-up  fs-5"
                                                                                 id="thumb-icon-{{ $row->product->id }}"
-                                                                                style="color: #ed1c24;"></i></a>
+                                                                                style="color: #127139;"></i></a>
                                                                     @endif
                                                                 @else
                                                                     <a href="{{ route('login') }}"
