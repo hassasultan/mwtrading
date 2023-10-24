@@ -608,8 +608,49 @@
 
 
     </div>
+    <style>
+        .parallax {
+          /* The image used */
+          background-image: url("{{ asset('assets/images/banner-bg.png') }}");
+        
+          /* Set a specific height */
+          min-height: 500px;
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+<div class="container-fluid pb-5">
+    <div class="parallax p-5">
+        <div class="col-md-6 p-5 text-white">
+            <h4 class="text-white">CONTENT HERE</h4>
+            <p class="text-white">some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text </p>
+            <p class="text-white">some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text some dummy text </p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-5">
+    <div class="logo p-5">
+        <div class="row">
+            <div class="col-sm-3 p-2">
+                <img src="{{ asset('assets/images/icon-1.png') }}"/>
+            </div>
+            <div class="col-sm-3 p-2">
+                <img src="{{ asset('assets/images/icon-2.png') }}"/>
 
-
+            </div>
+            <div class="col-sm-3 p-2">
+                <img src="{{ asset('assets/images/icon-3.png') }}"/>
+            </div>
+            <div class="col-sm-3 p-2">
+                <img src="{{ asset('assets/images/icon-1.png') }}"/>
+            </div>
+        </div>
+    </div>
+</div>
 
     {{-- <div id="shopify-section-template--15924304773376__1650876933ae7882f4" class="shopify-section">
         <section class="new-category collection-category-template--15924304773376__1650876933ae7882f4">
