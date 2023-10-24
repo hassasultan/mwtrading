@@ -14,7 +14,7 @@
         $site = App\Models\SiteSetting::first();
     @endphp
     <meta name="description" content="@yield('description')">
-    <link rel="icon" type="image/x-icon" href="{{ asset('storage/'.$site->logo) }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('public/storage/'.$site->logo) }}">
     <meta property='og:title' content='@yield('page_title')' />
     <meta property='og:image' content='@yield('meta-image')' />
     <meta property="og:image:width" content="300">
@@ -371,7 +371,7 @@
                             html_collect += "    <a href='/collection/category/" + val['slug'] +
                                 "' class='banner-img'>";
                             html_collect +=
-                                "        <img src='{{ asset('public/storage/') }}/" + val[
+                                "        <img src='{{ asset('public/public/storage/') }}/" + val[
                                     'icon'] + "'";
                             html_collect += "            class='img-fluid' alt='" + val[
                                 'name'] + "'>";
